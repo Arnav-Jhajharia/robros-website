@@ -27,10 +27,7 @@ const Parallax = dynamic(
   { ssr: false }
 )
 
-const AppearTitle = dynamic(
-  () => import('components/appear-title').then((mod) => mod.AppearTitle),
-  { ssr: false }
-)
+
 
 const HorizontalSlides = dynamic(
   () =>
