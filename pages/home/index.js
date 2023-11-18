@@ -27,10 +27,6 @@ const Parallax = dynamic(
   { ssr: false }
 )
 
-const AppearTitle = dynamic(
-  () => import('components/appear-title').then((mod) => mod.AppearTitle),
-  { ssr: false }
-)
 
 const HorizontalSlides = dynamic(
   () =>
@@ -319,6 +315,7 @@ export default function Home() {
             <Card
               className={s.card}
               number="App"
+              background=''
               text="Control with a tap."
             />
           </HorizontalSlides>
@@ -426,7 +423,7 @@ export default function Home() {
        <section className={s.why} data-lenis-scroll-snap-align="start">
         <div className="layout-grid">
           <h2 className={cn(s.sticky, 'h2')}>
-            <AppearTitle>Our awards</AppearTitle>
+            Our awards
           </h2>
           <aside className={s.features} ref={whyRectRef}>
           
