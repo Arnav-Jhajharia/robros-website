@@ -15,19 +15,19 @@ class Card extends React.Component {
 $(document).ready(function() {
 
   var rows = 4; //change this also in css
-  var cols = 6; //change this also in css
+  var cols = 4; //change this also in css
   var staggerTime = 150;
 
   var urls = [
-    "https://kiyutink.github.io/nyc/nyc1.jpg",
-    "https://kiyutink.github.io/nyc/nyc2.jpg",
-    "https://kiyutink.github.io/nyc/nyc3.jpg",
-    "https://kiyutink.github.io/nyc/nyc4.jpg",
-    "https://kiyutink.github.io/nyc/nyc5.jpg",
-    "https://kiyutink.github.io/london/london1.jpg",
-    "https://kiyutink.github.io/london/london2.jpg",
-    "https://kiyutink.github.io/london/london3.jpg",
-    "https://kiyutink.github.io/madrid/madrid1.jpg",
+    "https://res.cloudinary.com/dm79plror/image/upload/v1700285848/D767661D-00E4-4D9D-A782-8F6A5ED635E5_efn4ri.jpg",
+    "https://res.cloudinary.com/dm79plror/image/upload/v1700278768/WhatsApp_Image_2023-11-18_at_09.09.08_cl9zmi.jpg",
+    "https://res.cloudinary.com/dm79plror/image/upload/v1700287487/Screenshot_2023-11-18_at_11.34.23_AM_ryj6yr.png",
+    "https://res.cloudinary.com/dm79plror/image/upload/v1700285823/562C8AC9-3AD1-4749-AB1C-3B80F701DD7D_yizahf.jpg",
+    "https://res.cloudinary.com/dm79plror/image/upload/v1699934756/Team/zikahd3jr0yixyf2wvvu.jpg",
+    "https://res.cloudinary.com/dm79plror/image/upload/v1700285755/187F6C42-50F8-4B47-8B69-2647BE27FFA8_hqrajm.jpg",
+    "https://res.cloudinary.com/dm79plror/image/upload/v1700285809/C5C03172-0543-4D4A-9A33-10ACB76D0E70_b6gajj.jpg",
+    "https://res.cloudinary.com/dm79plror/image/upload/v1700287805/IMG-20231022-WA0063_hf8x9n.jpg",
+    "https://res.cloudinary.com/dm79plror/image/upload/v1700278263/WhatsApp_Image_2023-11-18_at_09.00.21_mavynh.jpg",
     "https://kiyutink.github.io/madrid/madrid2.jpg",
     "https://kiyutink.github.io/madrid/madrid3.jpg",
     "https://kiyutink.github.io/beijing/beijing1.jpg",
@@ -35,15 +35,7 @@ $(document).ready(function() {
     "https://kiyutink.github.io/beijing/beijing3.jpg",
     "https://kiyutink.github.io/moscow/moscow1.jpg",
     "https://kiyutink.github.io/moscow/moscow2.jpg",
-    "https://kiyutink.github.io/moscow/moscow3.jpg",
-    "https://kiyutink.github.io/sidney/sidney1.jpg",
-    "https://kiyutink.github.io/sidney/sidney2.jpg",
-    "https://kiyutink.github.io/sidney/sidney3.jpg",
-    "https://kiyutink.github.io/tokyo/tokyo1.jpg",
-    "https://kiyutink.github.io/tokyo/tokyo2.jpg",
-    "https://kiyutink.github.io/tokyo/tokyo3.jpg",
-    "https://kiyutink.github.io/la/la3.jpg"
-  ];
+      ];
 
   var $gallery = $(".demo__gallery");
   var $help = $(".demo__help");

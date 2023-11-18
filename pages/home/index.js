@@ -18,7 +18,7 @@ import { useEffect, useRef, useState } from 'react'
 import { useIntersection, useWindowSize } from 'react-use'
 import s from './home.module.scss'
 import GlobalError from 'next/dist/client/components/error-boundary'
-
+import TeamPage  from 'components/teampage'
 const SFDR = dynamic(() => import('icons/sfdr.svg'), { ssr: false })
 const GitHub = dynamic(() => import('icons/github.svg'), { ssr: false })
 
@@ -142,6 +142,23 @@ export default function Home() {
   const [inuseRectRef, inuseRect] = useRect()
 
   const addThreshold = useStore(({ addThreshold }) => addThreshold)
+  useEffect(() => {
+    const textElement = document.getElementById('big-text');
+
+    function handleScroll() {
+      const scrollY = window.scrollY;
+      const scale = Math.max(1 - scrollY / 500, 0);
+      const translateY = -scrollY / 2; // Control upward movement
+
+      // Updating transform properties
+      textElement.style.transform = `translate(0, ${translateY}px) scale(${scale})`;
+      textElement.style.opacity = scale;
+    }
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   useEffect(() => {
     addThreshold({ id: 'top', value: 0 })
@@ -207,15 +224,106 @@ export default function Home() {
     <Layout
       theme={theme}
       seo={{
-        title: 'Lenis – Get smooth or die trying',
+        title: 'RoBros',
         description:
-          'A new smooth scroll library fresh out of the Studio Freight Darkroom',
+          '',
       }}
       className={s.home}
     >
       <div className={s.canvas}>
         <WebGL />
       </div>
+      <section className={s.hero}>
+        <div className="layout-grid-inner">
+          <Title className={s.title} thing = {"RoBros"} />
+          <SFDR className={cn(s.icon, introOut && s.show)} />
+          <span className={cn(s.sub)}>
+            
+          </span>
+        </div>
+
+        <div className={cn(s.bottom, 'layout-grid')}>
+          <div
+            className={cn(
+              'hide-on-mobile',
+              s['scroll-hint'],
+              hasScrolled && s.hide,
+              introOut && s.show
+            )}
+          >
+            <div className={s.text}>
+              <HeroTextIn introOut={introOut}>
+                <p>scroll</p>
+              </HeroTextIn>
+              <HeroTextIn introOut={introOut}>
+                <p> to explore</p>
+              </HeroTextIn>
+            </div>
+          </div>
+          <h1 className={cn(s.description, 'p-s')}>
+            <HeroTextIn introOut={introOut}>
+              <p className="p-s"> A new smooth scroll library</p>
+            </HeroTextIn>
+            <HeroTextIn introOut={introOut}>
+              <p className="p-s">fresh out of the</p>
+            </HeroTextIn>
+            <HeroTextIn introOut={introOut}>
+              <p className="p-s">Studio Freight Darkroom</p>
+            </HeroTextIn>
+          </h1>
+          <Button
+            className={cn(s.cta, introOut && s.in)}
+            arrow
+            icon={<GitHub />}
+            href="https://github.com/studio-freight/lenis"
+          >
+            Check it out on github
+          </Button>
+        </div>
+      </section>
+
+
+          <section className={s.rethink}>
+        <div className={cn('layout-grid', s.pre)}>
+           
+          
+        </div>
+        <div className={s.cards} ref={cardsRectRef}>
+          <HorizontalSlides>
+            <Card
+              className={s.card}
+              number="RoVolt"
+              text="Innovation on six legs."
+              background='https://res.cloudinary.com/dm79plror/image/upload/v1700277568/Screenshot_2023-11-18_at_8.48.41_AM_i4ug8u.png'
+                
+            
+            />
+            <Card
+              className={s.card}
+              number="RoAI"
+              background='https://images.unsplash.com/photo-1581677641984-cf14ca58c5ee?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dHJhZmZpYyUyMGxpZ2h0fGVufDB8fDB8fHww'
+              text="Advanced traffic recognition model designed for the car"
+            />
+            <Card
+              className={s.card}
+              number="RoPlant"
+              text="Your garden's tech companion."
+              background='https://res.cloudinary.com/dm79plror/image/upload/v1700278263/WhatsApp_Image_2023-11-18_at_09.00.21_mavynh.jpg'
+            />
+            <Card
+              className={s.card}
+              number="RoCar"
+              background='https://res.cloudinary.com/dm79plror/image/upload/w_1000,ar_1:1,c_fill,g_auto,e_art:hokusai/v1700278768/WhatsApp_Image_2023-11-18_at_09.09.08_cl9zmi.jpg'
+              text="Minor car, major innovation"
+            />
+            <Card
+              className={s.card}
+              number="App"
+              text="Control with a tap."
+            />
+          </HorizontalSlides>
+        </div>
+      </section>
 {/* 
       <section className={s.hero}>
         <div className="layout-grid-inner">
@@ -305,9 +413,9 @@ export default function Home() {
                 className="contrast semi-bold"
                 href="https://github.com/studio-freight/lenis"
               >
-                best
+                best <br />
               </Link>{' '}
-           <br /> We're a community of learners, experimenters and builders.
+           <br /> We're a community of learners, experimenters and builders
             </p>
           </div>
         </div>
@@ -318,121 +426,60 @@ export default function Home() {
        <section className={s.why} data-lenis-scroll-snap-align="start">
         <div className="layout-grid">
           <h2 className={cn(s.sticky, 'h2')}>
-            <AppearTitle>Our timeline</AppearTitle>
+            <AppearTitle>Our awards</AppearTitle>
           </h2>
           <aside className={s.features} ref={whyRectRef}>
           
             <div className={s.feature}>
               <h3 className={cn(s.title, 'h4')}>
-                LMB C11 Science Fair (School)
+                La Martiniere for Boys Science Exhibition 2022 🥇
               </h3>
-              <p className="p">
-                This was the inception of RoBros, the first two members, Aakarsh and Arnav. After winning the science fair, our model consisting of a tracking website and a smart plant device, we have never looked back.
-              </p>
+              
             </div>
             <div className={s.feature}>
               <h3 className={cn(s.title, 'h4')}>
-                ADAMAS University (State)
+                ADAMAS University (State) 🥇
               </h3>
-              <p className="p">
-                This marks the entry of the other two members, Aditya and Shriradhya. Our second project, the AVolt was presented in this fair, boasting a remote control 
-              </p>
+            
             </div>
             <div className={s.feature}>
               <h3 className={cn(s.title, 'h4')}>
-                Smart Bengal Hackathon (State/National)
+                Smart Bengal Hackathon (State/National) 🥇
               </h3>
-              <p className="p">
-                b0l bachan
-              </p>
+              
             </div>
+            <div className={s.feature}>
+              <h3 className={cn(s.title, 'h4')}> 
+                La Martiniere for Boys Science Exhibition 2023 🥇
+              </h3>
+              
+            </div>
+            <div className={s.feature}>
+              <h3 className={cn(s.title, 'h4')}>
+                Calcutta Boys School Science Exhibition @ Concord 2023 🥇
+              </h3>
+              
+            </div>
+            <div className={s.feature}>
+              <h3 className={cn(s.title, 'h4')}>
+                Don Bosco Park Circus EXPO @ BOSCO Fest 2023 🥇
+              </h3>
+              
+            </div>
+       
               <div className={s.feature}>
               <h3 className={cn(s.title, 'h4')}>
-                Smart India Hackathon (National) [Upcoming]
+                DPS Ruby Park Droid Wars @ LOGIQUE 🥈
               </h3>
-              <p className="p">
-                bol bvacchan
-              </p>
-            </div>
-              <div className={s.feature}>
-              <h3 className={cn(s.title, 'h4')}>
-                Smart Bengal Hackathon (State/National)
-              </h3>
-              <p className="p">
-                Synchronization with native scroll is not reliable. Those jumps
-                and delays with scroll-linked animations are caused by
-                multi-threading, where modern browsers run animations/effects
-                asynchronously with the scroll. Smooth scroll fixes this.
-              </p>
+             
             </div>
           </aside>
         </div>
       </section>
 
-           <section className={s.rethink}>
-        <div className={cn('layout-grid', s.pre)}>
-          <div className={s.highlight} data-lenis-scroll-snap-align="start">
-            <Parallax speed={-0.5}>
-              <p className="h2">
-                <AppearTitle>Rethinking smooth scroll</AppearTitle>
-              </p>
-            </Parallax>
-          </div>
-          <div className={s.comparison}>
-            <Parallax speed={0.5}>
-              <p className="p">
-                We have to give props to libraries like{' '}
-                <Link
-                  className="contrast semi-bold"
-                  href="https://github.com/locomotivemtl/locomotive-scroll"
-                >
-                  Locomotive Scroll
-                </Link>{' '}
-                and{' '}
-                <Link
-                  className="contrast semi-bold"
-                  href="https://greensock.com/docs/v3/Plugins/ScrollSmoother"
-                >
-                  GSAP ScrollSmoother
-                </Link>
-                . They’re well built and well documented – and we’ve used them a
-                lot. But they still have issues that keep them from being
-                bulletproof.
-              </p>
-            </Parallax>
-          </div>
-        </div>
-        <div className={s.cards} ref={cardsRectRef}>
-          <HorizontalSlides>
-            <Card
-              className={s.card}
-              number="RoVolt"
-              text="Innovation on six legs."
-            />
-            <Card
-              className={s.card}
-              number="RoAI"
-              text="Advanced traffic recognition model designed for the car"
-            />
-            <Card
-              className={s.card}
-              number="RoPlant"
-              text="Your garden's tech companion."
-            />
-            <Card
-              className={s.card}
-              number="RoCar"
-              text="Minor car, major innovation"
-            />
-            <Card
-              className={s.card}
-              number="App"
-              text="Control with a tap."
-            />
-          </HorizontalSlides>
-        </div>
-      </section>
-      <Gallery />
+       
+    <div style={{"maxWidth":'100vw', 'maxHeight': '100vh'}}><Gallery /></div>  
+    {/* <TeamPage /> */}
     </Layout>
   )
 }

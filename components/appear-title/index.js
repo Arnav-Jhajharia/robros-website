@@ -57,6 +57,7 @@ export function AppearTitle({ children, visible = true }) {
         el.current = node
         rectRef(node)
       }}
+      style={{'color': 'var(--theme-contrast)'}}
       className={cn(s.title, intersected && visible && s.visible)}
     >
       {children}

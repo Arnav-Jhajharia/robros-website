@@ -76,22 +76,25 @@ $intro-duration: 2050ms;
   }
 
   .title {
-    grid-column: 1 / -1;
-    margin-top: mobile-vw(30px);
-    width: var(--layout-width);
+     background-image: url(https://res.cloudinary.com/dm79plror/image/upload/v1699934756/Team/zikahd3jr0yixyf2wvvu.jpg);
 
-    @include mobile {
-      height: mobile-vw(85px);
-    }
-
-    @include desktop {
-      margin-top: desktop-vw(30px);
-      position: absolute;
-      top: 0;
-      left: 2.5%;
-    }
+    background-clip: content-box; /* Clips the background image to the text */
+    -webkit-background-clip: text; /* For Safari browser support */
+    background-size: contain; /* Ensures the image covers the whole text */
+    // text-align: center; /* Optional: Aligns text to the center */
+  font-size: 16rem; /* Large `  font size */
+  display: flex;
+  width: 95vw;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  // transition: all 0.3s ease;
+  opacity: 1;
+font-family: 'Haydes';
   }
-
+@media screen and (max-width: 900px) {
+    .title {font-size: 6rem;}
+}
   .icon {
     width: mobile-vw(44px);
     height: mobile-vw(39px);
@@ -281,7 +284,7 @@ $intro-duration: 2050ms;
     }
 
     .title {
-      color: var(--theme-contrast);
+      color: var(--theme-secondary);
       margin-bottom: mobile-vw(16px);
 
       @include desktop {

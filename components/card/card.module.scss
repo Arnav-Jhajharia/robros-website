@@ -56,8 +56,8 @@
 }
 
 .wrapper:hover {
-  background-image: url('https://kiyutink.github.io/la/la3.jpg');
+  background-image: var(--background-hover);
   color: transparent;
+  background-size: cover;
 }
 
-// .wrapper 

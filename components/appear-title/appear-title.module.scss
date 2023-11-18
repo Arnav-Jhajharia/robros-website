@@ -1,9 +1,13 @@
 .title {
+  // * {
+  //   color: 'pink'
+  // }
   .line {
     display: inline-block;
     overflow: hidden;
 
     > * {
+    // color: pink;
       display: inline-block;
     }
   }

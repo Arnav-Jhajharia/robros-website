@@ -11,7 +11,7 @@ export const Card = ({
   return (
     <div
       className={cn(className, s.wrapper, inverted && s.inverted)}
-      // style={{ '--background':  }}
+      style={{ '--background-hover': `url(${background})` }}
     >
       {/* <img src="https://kiyutink.github.io/la/la3.jpg" alt="Your Image"></img> */}
       {number && (
@@ -21,3 +21,4 @@ export const Card = ({
     </div>
   )
 }
+
