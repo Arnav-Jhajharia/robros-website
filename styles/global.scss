@@ -9,6 +9,13 @@
 @import './_themes.scss';
 @import './_scroll.scss';
 
+@font-face {
+  font-family: 'Haydes';
+  src: url('/fonts/haydes.ttf') format('woff2');
+  // font-display: swap;
+  // font-weight: 400;
+}
+
 :root {
   --header-height: #{mobile-vw(58px)};
 

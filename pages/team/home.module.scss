@@ -84,6 +84,7 @@ $intro-duration: 2050ms;
   justify-content: center;
   // transition: all 0.3s ease;
   opacity: 1;
+font-weight: 400;
 font-family: 'Haydes';
   }
 @media screen and (max-width: 900px) {
@@ -353,7 +354,7 @@ font-family: 'Haydes';
   position: relative;
 
   color: var(--black);
-  height: 0vh;
+  height: 0vh ;
 
   @include desktop {
     height: 0vh;
