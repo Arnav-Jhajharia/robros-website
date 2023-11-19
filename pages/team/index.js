@@ -217,7 +217,7 @@ export default function Home() {
     <Layout
       theme={theme}
       seo={{
-        title: 'Lenis – Get smooth or die trying',
+        title: 'Team | RoBros',
         description:
           'A new smooth scroll library fresh out of the Studio Freight Darkroom',
       }}
