@@ -82,7 +82,7 @@ export default function Home() {
         lenis.scrollTo(30000, { immediate: true })
       }),
       smoothDuration: button(() => {
-        lenis.scrollTo(30000, { lock: true, duration: 10 })
+        lenis.scrollTo(30000, { lock: true, duration: 4 })
       }),
       smooth: button(() => {
         lenis.scrollTo(30000)
@@ -112,7 +112,7 @@ export default function Home() {
     setHasScrolled(scroll > 10)
     if (!zoomWrapperRect.top) return
 
-    const start = zoomWrapperRect.top + windowHeight * 0.5
+    const start = zoomWrapperRect.top + windowHeight * 0.1
     const end = zoomWrapperRect.top + zoomWrapperRect.height - windowHeight
 
     const progress = clamp(0, mapRange(start, end, scroll, 0, 1), 1)
@@ -464,12 +464,7 @@ export default function Home() {
               
             </div>
        
-              <div className={s.feature}>
-              <h3 className={cn(s.title, 'h4')}>
-                DPS Ruby Park Droid Wars @ LOGIQUE 🥈
-              </h3>
              
-            </div>
           </aside>
         </div>
       </section>
