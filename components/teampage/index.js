@@ -17,10 +17,10 @@ class Card extends React.Component {
       <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
         <div className="team-card">
           <div className="img-wrapper">
-            <img className="team-img" src="https://res.cloudinary.com/dm79plror/image/upload/v1699909882/Team/hirronkt7ivktkdfr40e.jpg" />
+            <img className="team-img" src="https://res.cloudinary.com/dm79plror/image/upload/v1700384178/Team/WSYM3434_xvhmbh.jpg" />
           </div>
           <p className="text-blk name">
-            Arnav Jhajharia
+            Aakarsh Garg
           </p>
           <p className="text-blk position">
 
@@ -44,10 +44,10 @@ class Card extends React.Component {
       <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
         <div className="team-card">
           <div className="img-wrapper">
-            <img className="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png" />
+            <img className="team-img" src="https://res.cloudinary.com/dm79plror/image/upload/v1700384217/Team/DZYG1449_gczlzt.jpg" />
           </div>
           <p className="text-blk name">
-            Aakarsh Garg
+            Arnav Jhajharia
           </p>
           <p className="text-blk position">
             
@@ -71,7 +71,7 @@ class Card extends React.Component {
       <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
         <div className="team-card">
           <div className="img-wrapper">
-            <img className="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png" />
+            <img className="team-img" src="https://res.cloudinary.com/dm79plror/image/upload/v1700384310/Team/EEYW0560_vuxhqm.jpg" />
           </div>
           <p className="text-blk name">
             Aditya Dutta
@@ -98,7 +98,7 @@ class Card extends React.Component {
       <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
         <div className="team-card">
           <div className="img-wrapper">
-            <img className="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png" />
+            <img className="team-img" src="https://res.cloudinary.com/dm79plror/image/upload/v1700384283/Team/HZJN4151_abxamk.jpg" />
           </div>
           <p className="text-blk name">
             Shriradhya Bihani
