@@ -17,49 +17,19 @@ class Card extends React.Component {
       <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
         <div className="team-card">
           <div className="img-wrapper">
-            <img className="team-img" src="https://res.cloudinary.com/dm79plror/image/upload/v1699909882/Team/hirronkt7ivktkdfr40e.jpg" />
-          </div>
-          <p className="text-blk name">
-            Arnav Jhajharia
-          </p>
-          <p className="text-blk position">
-
-          </p>
-          <div className="social-media-links">
-            <a href="http://www.twitter.com/" target="_blank">
-              <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg" />
-            </a>
-            <a href="http://www.facebook.com/" target="_blank">
-              <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg" />
-            </a>
-            <a href="http://www.instagram.com/" target="_blank">
-              <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" />
-            </a>
-            <a href="http://www.gmail.com/" target="_blank">
-              <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" />
-            </a>
-          </div>
-        </div>
-      </div>
-      <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
-        <div className="team-card">
-          <div className="img-wrapper">
-            <img className="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png" />
+            <img className="team-img" src="https://res.cloudinary.com/dm79plror/image/upload/v1700384178/Team/WSYM3434_xvhmbh.jpg" />
           </div>
           <p className="text-blk name">
             Aakarsh Garg
           </p>
           <p className="text-blk position">
-            
+
           </p>
           <div className="social-media-links">
-            <a href="http://www.twitter.com/" target="_blank">
+            <a href="https://twitter.com/Aakarsh12_" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg" />
             </a>
-            <a href="http://www.facebook.com/" target="_blank">
-              <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg" />
-            </a>
-            <a href="http://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/aakarsh12_/" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" />
             </a>
             <a href="http://www.gmail.com/" target="_blank">
@@ -71,7 +41,31 @@ class Card extends React.Component {
       <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
         <div className="team-card">
           <div className="img-wrapper">
-            <img className="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert1.png" />
+            <img className="team-img" src="https://res.cloudinary.com/dm79plror/image/upload/v1700384217/Team/DZYG1449_gczlzt.jpg" />
+          </div>
+          <p className="text-blk name">
+            Arnav Jhajharia
+          </p>
+          <p className="text-blk position">
+            
+          </p>
+          <div className="social-media-links">
+            <a href="https://twitter.com/JhajhariaArnav" target="_blank">
+              <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg" />
+            </a>
+            <a href="https://www.instagram.com/_arnav06_/" target="_blank">
+              <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" />
+            </a>
+            <a href="http://www.gmail.com/" target="_blank">
+              <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+        <div className="team-card">
+          <div className="img-wrapper">
+            <img className="team-img" src="https://res.cloudinary.com/dm79plror/image/upload/v1700384310/Team/EEYW0560_vuxhqm.jpg" />
           </div>
           <p className="text-blk name">
             Aditya Dutta
@@ -80,13 +74,10 @@ class Card extends React.Component {
             
           </p>
           <div className="social-media-links">
-            <a href="http://www.twitter.com/" target="_blank">
+            <a href="https://twitter.com/adiiew" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg" />
             </a>
-            <a href="http://www.facebook.com/" target="_blank">
-              <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg" />
-            </a>
-            <a href="http://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/_adityadutta/" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" />
             </a>
             <a href="http://www.gmail.com/" target="_blank">
@@ -98,7 +89,7 @@ class Card extends React.Component {
       <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
         <div className="team-card">
           <div className="img-wrapper">
-            <img className="team-img" src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/expert2.png" />
+            <img className="team-img" src="https://res.cloudinary.com/dm79plror/image/upload/v1700384283/Team/HZJN4151_abxamk.jpg" />
           </div>
           <p className="text-blk name">
             Shriradhya Bihani
@@ -107,13 +98,10 @@ class Card extends React.Component {
             {/* Instructor */}
           </p>
           <div className="social-media-links">
-            <a href="http://www.twitter.com/" target="_blank">
+            <a href="https://twitter.com/shriradhya" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg" />
             </a>
-            <a href="http://www.facebook.com/" target="_blank">
-              <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg" />
-            </a>
-            <a href="http://www.instagram.com/" target="_blank">
+            <a href="https://www.instagram.com/shriradhya/" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg" />
             </a>
             <a href="http://www.gmail.com/" target="_blank">
