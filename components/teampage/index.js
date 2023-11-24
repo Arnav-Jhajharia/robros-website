@@ -89,10 +89,10 @@ class Card extends React.Component {
       <div className="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
         <div className="team-card">
           <div className="img-wrapper">
-            <img className="team-img" src="https://res.cloudinary.com/dm79plror/image/upload/v1700384283/Team/HZJN4151_abxamk.jpg" />
+            <img className="team-img" src="" />
           </div>
           <p className="text-blk name">
-            Shriradhya Bihani
+            Anshuman Tekriwal
           </p>
           <p className="text-blk position">
             {/* Instructor */}
