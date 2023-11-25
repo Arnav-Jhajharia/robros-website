@@ -92,7 +92,7 @@ class Card extends React.Component {
             <img className="team-img" src="" />
           </div>
           <p className="text-blk name">
-            Anshuman Tekriwal
+            Shriradhya Bihani
           </p>
           <p className="text-blk position">
             {/* Instructor */}
