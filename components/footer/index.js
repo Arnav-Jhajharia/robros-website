@@ -57,7 +57,7 @@ export const Footer = () => {
           </Link>
           <Link
             className={cn(s.link, 'p-xs')}
-            href="https://robros.in#team"
+            href="https://robros.in/team"
           >
             Team
           </Link>
